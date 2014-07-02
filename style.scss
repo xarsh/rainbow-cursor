@@ -1,0 +1,13 @@
+#rect{
+	background                      : lightblue;
+	width                           : 60px;
+	height                          : 60px;
+	position                        : absolute;
+	overflow						: hidden;
+	border-left: 0px solid transparent;
+	border-radius                   : 50px;
+	border-top-right-radius         : 0;
+    transform:skewX(-12deg) skewY(-4deg);
+	top                             : 30px;	
+    border
+}
