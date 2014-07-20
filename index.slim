@@ -3,15 +3,23 @@ head
   meta charset="UTF-8"
   meta name="author" content="Takao Naito (xarsh@outlook.com)"
   link rel="stylesheet" href="./style.css"
+  script src="bower_components/jquery/dist/jquery.min.js"
+  script src="src/rainbow-cursor.js"
+  javascript:
+    $(function () {
+      $('.rainbow').rainbow();
+    });
 body
-  .wrapper
-    - 180.times do
-      .rainbow
-  .dark-wrapper
-    - 5.times do
-      .dark
-  .high-light
-  .emboss
+  / .rainbow-wrapper
+  /   - 180.times do
+  /     .rainbow-color
+  / .rainbow-dark-wrapper
+  /   - 5.times do
+  /     .rainbow-dark
+  / .rainbow-high-light
+  / .rainbow-emboss
+
+  .rainbow
 
   p.name
     | CSSでMacのアレを作ってみた。これもすごい人だったらdiv一個でできたりするのかなー。<br>

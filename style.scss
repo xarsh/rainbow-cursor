@@ -5,7 +5,7 @@ html, body{
         position:absolute;
     }
 }
-.wrapper, .emboss, .dark-wrapper{
+.rainbow-wrapper, .rainbow-emboss, .rainbow-dark-wrapper {
     width:240px;
     height:240px;
     border-radius:50%;
@@ -13,16 +13,16 @@ html, body{
     left:100px;
     top:100px;
 }
-.wrapper{
+.rainbow-wrapper{
     box-shadow:0 8px 8px rgba(0,0,0,0.9);
 }
-.emboss{
+.rainbow-emboss{
     box-shadow:0 0 26px rgba(0,0,0,0.5) inset;
 }
-.rainbow{
+.rainbow-color {
     width: 60px;
     height : 60px;
-    border-top-right-radius : 0;	
+    border-top-right-radius : 0;
     -webkit-transform-origin:right top;
     transform-origin:right top;
     left: 60px;
@@ -35,11 +35,11 @@ html, body{
         }
     }
 }
-.dark-wrapper{
+.rainbow-dark-wrapper{
     -webkit-animation:rotating 1s linear infinite;
     animation:rotating 1s linear infinite;
 }
-.dark{
+.rainbow-dark{
     width:182px;
     height:247px;
     top:-4px;
@@ -55,7 +55,7 @@ html, body{
         }
     }
 }
-.high-light{
+.rainbow-high-light{
     top:108px;
     left:127px;
     background:linear-gradient(to bottom, rgba(255,255,255,0.8), rgba(255,255,255,0));
