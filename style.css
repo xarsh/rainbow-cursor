@@ -1,944 +1,757 @@
 html, body {
   width: 100%;
-  height: 100%;
-}
-html div, body div {
-  position: absolute;
-}
+  height: 100%; }
+  html div, body div {
+    position: absolute; }
 
-.wrapper, .emboss, .dark-wrapper {
+.rainbow-wrapper, .rainbow-emboss, .rainbow-dark-wrapper {
   width: 240px;
   height: 240px;
   border-radius: 50%;
   overflow: hidden;
   left: 100px;
-  top: 100px;
-}
+  top: 100px; }
 
-.wrapper {
-  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.9);
-}
+.rainbow-wrapper {
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.9); }
 
-.emboss {
-  box-shadow: 0 0 26px rgba(0, 0, 0, 0.5) inset;
-}
+.rainbow-emboss {
+  box-shadow: 0 0 26px rgba(0, 0, 0, 0.5) inset; }
 
-.rainbow {
+.rainbow-color {
   width: 60px;
   height: 60px;
   border-top-right-radius: 0;
   -webkit-transform-origin: right top;
   transform-origin: right top;
   left: 60px;
-  top: 120px;
-}
-.rainbow:nth-child(1) {
-  -webkit-transform: rotate(0deg) skewX(-85deg);
-  transform: rotate(0deg) skewX(-85deg);
-  background-color: red;
-}
-.rainbow:nth-child(2) {
-  -webkit-transform: rotate(2deg) skewX(-85deg);
-  transform: rotate(2deg) skewX(-85deg);
-  background-color: #ff0008;
-}
-.rainbow:nth-child(3) {
-  -webkit-transform: rotate(4deg) skewX(-85deg);
-  transform: rotate(4deg) skewX(-85deg);
-  background-color: #ff0011;
-}
-.rainbow:nth-child(4) {
-  -webkit-transform: rotate(6deg) skewX(-85deg);
-  transform: rotate(6deg) skewX(-85deg);
-  background-color: #ff001a;
-}
-.rainbow:nth-child(5) {
-  -webkit-transform: rotate(8deg) skewX(-85deg);
-  transform: rotate(8deg) skewX(-85deg);
-  background-color: #ff0022;
-}
-.rainbow:nth-child(6) {
-  -webkit-transform: rotate(10deg) skewX(-85deg);
-  transform: rotate(10deg) skewX(-85deg);
-  background-color: #ff002b;
-}
-.rainbow:nth-child(7) {
-  -webkit-transform: rotate(12deg) skewX(-85deg);
-  transform: rotate(12deg) skewX(-85deg);
-  background-color: #ff0033;
-}
-.rainbow:nth-child(8) {
-  -webkit-transform: rotate(14deg) skewX(-85deg);
-  transform: rotate(14deg) skewX(-85deg);
-  background-color: #ff003b;
-}
-.rainbow:nth-child(9) {
-  -webkit-transform: rotate(16deg) skewX(-85deg);
-  transform: rotate(16deg) skewX(-85deg);
-  background-color: #ff0044;
-}
-.rainbow:nth-child(10) {
-  -webkit-transform: rotate(18deg) skewX(-85deg);
-  transform: rotate(18deg) skewX(-85deg);
-  background-color: #ff004c;
-}
-.rainbow:nth-child(11) {
-  -webkit-transform: rotate(20deg) skewX(-85deg);
-  transform: rotate(20deg) skewX(-85deg);
-  background-color: #ff0055;
-}
-.rainbow:nth-child(12) {
-  -webkit-transform: rotate(22deg) skewX(-85deg);
-  transform: rotate(22deg) skewX(-85deg);
-  background-color: #ff005d;
-}
-.rainbow:nth-child(13) {
-  -webkit-transform: rotate(24deg) skewX(-85deg);
-  transform: rotate(24deg) skewX(-85deg);
-  background-color: #ff0066;
-}
-.rainbow:nth-child(14) {
-  -webkit-transform: rotate(26deg) skewX(-85deg);
-  transform: rotate(26deg) skewX(-85deg);
-  background-color: #ff006e;
-}
-.rainbow:nth-child(15) {
-  -webkit-transform: rotate(28deg) skewX(-85deg);
-  transform: rotate(28deg) skewX(-85deg);
-  background-color: #ff0077;
-}
-.rainbow:nth-child(16) {
-  -webkit-transform: rotate(30deg) skewX(-85deg);
-  transform: rotate(30deg) skewX(-85deg);
-  background-color: #ff0080;
-}
-.rainbow:nth-child(17) {
-  -webkit-transform: rotate(32deg) skewX(-85deg);
-  transform: rotate(32deg) skewX(-85deg);
-  background-color: #ff0088;
-}
-.rainbow:nth-child(18) {
-  -webkit-transform: rotate(34deg) skewX(-85deg);
-  transform: rotate(34deg) skewX(-85deg);
-  background-color: #ff0091;
-}
-.rainbow:nth-child(19) {
-  -webkit-transform: rotate(36deg) skewX(-85deg);
-  transform: rotate(36deg) skewX(-85deg);
-  background-color: #ff0099;
-}
-.rainbow:nth-child(20) {
-  -webkit-transform: rotate(38deg) skewX(-85deg);
-  transform: rotate(38deg) skewX(-85deg);
-  background-color: #ff00a1;
-}
-.rainbow:nth-child(21) {
-  -webkit-transform: rotate(40deg) skewX(-85deg);
-  transform: rotate(40deg) skewX(-85deg);
-  background-color: #ff00aa;
-}
-.rainbow:nth-child(22) {
-  -webkit-transform: rotate(42deg) skewX(-85deg);
-  transform: rotate(42deg) skewX(-85deg);
-  background-color: #ff00b2;
-}
-.rainbow:nth-child(23) {
-  -webkit-transform: rotate(44deg) skewX(-85deg);
-  transform: rotate(44deg) skewX(-85deg);
-  background-color: #ff00bb;
-}
-.rainbow:nth-child(24) {
-  -webkit-transform: rotate(46deg) skewX(-85deg);
-  transform: rotate(46deg) skewX(-85deg);
-  background-color: #ff00c3;
-}
-.rainbow:nth-child(25) {
-  -webkit-transform: rotate(48deg) skewX(-85deg);
-  transform: rotate(48deg) skewX(-85deg);
-  background-color: #ff00cc;
-}
-.rainbow:nth-child(26) {
-  -webkit-transform: rotate(50deg) skewX(-85deg);
-  transform: rotate(50deg) skewX(-85deg);
-  background-color: #ff00d4;
-}
-.rainbow:nth-child(27) {
-  -webkit-transform: rotate(52deg) skewX(-85deg);
-  transform: rotate(52deg) skewX(-85deg);
-  background-color: #ff00dd;
-}
-.rainbow:nth-child(28) {
-  -webkit-transform: rotate(54deg) skewX(-85deg);
-  transform: rotate(54deg) skewX(-85deg);
-  background-color: #ff00e6;
-}
-.rainbow:nth-child(29) {
-  -webkit-transform: rotate(56deg) skewX(-85deg);
-  transform: rotate(56deg) skewX(-85deg);
-  background-color: #ff00ee;
-}
-.rainbow:nth-child(30) {
-  -webkit-transform: rotate(58deg) skewX(-85deg);
-  transform: rotate(58deg) skewX(-85deg);
-  background-color: #ff00f6;
-}
-.rainbow:nth-child(31) {
-  -webkit-transform: rotate(60deg) skewX(-85deg);
-  transform: rotate(60deg) skewX(-85deg);
-  background-color: magenta;
-}
-.rainbow:nth-child(32) {
-  -webkit-transform: rotate(62deg) skewX(-85deg);
-  transform: rotate(62deg) skewX(-85deg);
-  background-color: #f600ff;
-}
-.rainbow:nth-child(33) {
-  -webkit-transform: rotate(64deg) skewX(-85deg);
-  transform: rotate(64deg) skewX(-85deg);
-  background-color: #ee00ff;
-}
-.rainbow:nth-child(34) {
-  -webkit-transform: rotate(66deg) skewX(-85deg);
-  transform: rotate(66deg) skewX(-85deg);
-  background-color: #e500ff;
-}
-.rainbow:nth-child(35) {
-  -webkit-transform: rotate(68deg) skewX(-85deg);
-  transform: rotate(68deg) skewX(-85deg);
-  background-color: #dd00ff;
-}
-.rainbow:nth-child(36) {
-  -webkit-transform: rotate(70deg) skewX(-85deg);
-  transform: rotate(70deg) skewX(-85deg);
-  background-color: #d400ff;
-}
-.rainbow:nth-child(37) {
-  -webkit-transform: rotate(72deg) skewX(-85deg);
-  transform: rotate(72deg) skewX(-85deg);
-  background-color: #cc00ff;
-}
-.rainbow:nth-child(38) {
-  -webkit-transform: rotate(74deg) skewX(-85deg);
-  transform: rotate(74deg) skewX(-85deg);
-  background-color: #c300ff;
-}
-.rainbow:nth-child(39) {
-  -webkit-transform: rotate(76deg) skewX(-85deg);
-  transform: rotate(76deg) skewX(-85deg);
-  background-color: #bb00ff;
-}
-.rainbow:nth-child(40) {
-  -webkit-transform: rotate(78deg) skewX(-85deg);
-  transform: rotate(78deg) skewX(-85deg);
-  background-color: #b300ff;
-}
-.rainbow:nth-child(41) {
-  -webkit-transform: rotate(80deg) skewX(-85deg);
-  transform: rotate(80deg) skewX(-85deg);
-  background-color: #aa00ff;
-}
-.rainbow:nth-child(42) {
-  -webkit-transform: rotate(82deg) skewX(-85deg);
-  transform: rotate(82deg) skewX(-85deg);
-  background-color: #a200ff;
-}
-.rainbow:nth-child(43) {
-  -webkit-transform: rotate(84deg) skewX(-85deg);
-  transform: rotate(84deg) skewX(-85deg);
-  background-color: #9900ff;
-}
-.rainbow:nth-child(44) {
-  -webkit-transform: rotate(86deg) skewX(-85deg);
-  transform: rotate(86deg) skewX(-85deg);
-  background-color: #9000ff;
-}
-.rainbow:nth-child(45) {
-  -webkit-transform: rotate(88deg) skewX(-85deg);
-  transform: rotate(88deg) skewX(-85deg);
-  background-color: #8800ff;
-}
-.rainbow:nth-child(46) {
-  -webkit-transform: rotate(90deg) skewX(-85deg);
-  transform: rotate(90deg) skewX(-85deg);
-  background-color: #7f00ff;
-}
-.rainbow:nth-child(47) {
-  -webkit-transform: rotate(92deg) skewX(-85deg);
-  transform: rotate(92deg) skewX(-85deg);
-  background-color: #7700ff;
-}
-.rainbow:nth-child(48) {
-  -webkit-transform: rotate(94deg) skewX(-85deg);
-  transform: rotate(94deg) skewX(-85deg);
-  background-color: #6e00ff;
-}
-.rainbow:nth-child(49) {
-  -webkit-transform: rotate(96deg) skewX(-85deg);
-  transform: rotate(96deg) skewX(-85deg);
-  background-color: #6600ff;
-}
-.rainbow:nth-child(50) {
-  -webkit-transform: rotate(98deg) skewX(-85deg);
-  transform: rotate(98deg) skewX(-85deg);
-  background-color: #5e00ff;
-}
-.rainbow:nth-child(51) {
-  -webkit-transform: rotate(100deg) skewX(-85deg);
-  transform: rotate(100deg) skewX(-85deg);
-  background-color: #5500ff;
-}
-.rainbow:nth-child(52) {
-  -webkit-transform: rotate(102deg) skewX(-85deg);
-  transform: rotate(102deg) skewX(-85deg);
-  background-color: #4d00ff;
-}
-.rainbow:nth-child(53) {
-  -webkit-transform: rotate(104deg) skewX(-85deg);
-  transform: rotate(104deg) skewX(-85deg);
-  background-color: #4400ff;
-}
-.rainbow:nth-child(54) {
-  -webkit-transform: rotate(106deg) skewX(-85deg);
-  transform: rotate(106deg) skewX(-85deg);
-  background-color: #3c00ff;
-}
-.rainbow:nth-child(55) {
-  -webkit-transform: rotate(108deg) skewX(-85deg);
-  transform: rotate(108deg) skewX(-85deg);
-  background-color: #3300ff;
-}
-.rainbow:nth-child(56) {
-  -webkit-transform: rotate(110deg) skewX(-85deg);
-  transform: rotate(110deg) skewX(-85deg);
-  background-color: #2a00ff;
-}
-.rainbow:nth-child(57) {
-  -webkit-transform: rotate(112deg) skewX(-85deg);
-  transform: rotate(112deg) skewX(-85deg);
-  background-color: #2200ff;
-}
-.rainbow:nth-child(58) {
-  -webkit-transform: rotate(114deg) skewX(-85deg);
-  transform: rotate(114deg) skewX(-85deg);
-  background-color: #1900ff;
-}
-.rainbow:nth-child(59) {
-  -webkit-transform: rotate(116deg) skewX(-85deg);
-  transform: rotate(116deg) skewX(-85deg);
-  background-color: #1100ff;
-}
-.rainbow:nth-child(60) {
-  -webkit-transform: rotate(118deg) skewX(-85deg);
-  transform: rotate(118deg) skewX(-85deg);
-  background-color: #0800ff;
-}
-.rainbow:nth-child(61) {
-  -webkit-transform: rotate(120deg) skewX(-85deg);
-  transform: rotate(120deg) skewX(-85deg);
-  background-color: blue;
-}
-.rainbow:nth-child(62) {
-  -webkit-transform: rotate(122deg) skewX(-85deg);
-  transform: rotate(122deg) skewX(-85deg);
-  background-color: #0008ff;
-}
-.rainbow:nth-child(63) {
-  -webkit-transform: rotate(124deg) skewX(-85deg);
-  transform: rotate(124deg) skewX(-85deg);
-  background-color: #0011ff;
-}
-.rainbow:nth-child(64) {
-  -webkit-transform: rotate(126deg) skewX(-85deg);
-  transform: rotate(126deg) skewX(-85deg);
-  background-color: #0019ff;
-}
-.rainbow:nth-child(65) {
-  -webkit-transform: rotate(128deg) skewX(-85deg);
-  transform: rotate(128deg) skewX(-85deg);
-  background-color: #0022ff;
-}
-.rainbow:nth-child(66) {
-  -webkit-transform: rotate(130deg) skewX(-85deg);
-  transform: rotate(130deg) skewX(-85deg);
-  background-color: #002bff;
-}
-.rainbow:nth-child(67) {
-  -webkit-transform: rotate(132deg) skewX(-85deg);
-  transform: rotate(132deg) skewX(-85deg);
-  background-color: #0033ff;
-}
-.rainbow:nth-child(68) {
-  -webkit-transform: rotate(134deg) skewX(-85deg);
-  transform: rotate(134deg) skewX(-85deg);
-  background-color: #003bff;
-}
-.rainbow:nth-child(69) {
-  -webkit-transform: rotate(136deg) skewX(-85deg);
-  transform: rotate(136deg) skewX(-85deg);
-  background-color: #0044ff;
-}
-.rainbow:nth-child(70) {
-  -webkit-transform: rotate(138deg) skewX(-85deg);
-  transform: rotate(138deg) skewX(-85deg);
-  background-color: #004cff;
-}
-.rainbow:nth-child(71) {
-  -webkit-transform: rotate(140deg) skewX(-85deg);
-  transform: rotate(140deg) skewX(-85deg);
-  background-color: #0055ff;
-}
-.rainbow:nth-child(72) {
-  -webkit-transform: rotate(142deg) skewX(-85deg);
-  transform: rotate(142deg) skewX(-85deg);
-  background-color: #005eff;
-}
-.rainbow:nth-child(73) {
-  -webkit-transform: rotate(144deg) skewX(-85deg);
-  transform: rotate(144deg) skewX(-85deg);
-  background-color: #0066ff;
-}
-.rainbow:nth-child(74) {
-  -webkit-transform: rotate(146deg) skewX(-85deg);
-  transform: rotate(146deg) skewX(-85deg);
-  background-color: #006eff;
-}
-.rainbow:nth-child(75) {
-  -webkit-transform: rotate(148deg) skewX(-85deg);
-  transform: rotate(148deg) skewX(-85deg);
-  background-color: #0077ff;
-}
-.rainbow:nth-child(76) {
-  -webkit-transform: rotate(150deg) skewX(-85deg);
-  transform: rotate(150deg) skewX(-85deg);
-  background-color: #007fff;
-}
-.rainbow:nth-child(77) {
-  -webkit-transform: rotate(152deg) skewX(-85deg);
-  transform: rotate(152deg) skewX(-85deg);
-  background-color: #0088ff;
-}
-.rainbow:nth-child(78) {
-  -webkit-transform: rotate(154deg) skewX(-85deg);
-  transform: rotate(154deg) skewX(-85deg);
-  background-color: #0091ff;
-}
-.rainbow:nth-child(79) {
-  -webkit-transform: rotate(156deg) skewX(-85deg);
-  transform: rotate(156deg) skewX(-85deg);
-  background-color: #0099ff;
-}
-.rainbow:nth-child(80) {
-  -webkit-transform: rotate(158deg) skewX(-85deg);
-  transform: rotate(158deg) skewX(-85deg);
-  background-color: #00a1ff;
-}
-.rainbow:nth-child(81) {
-  -webkit-transform: rotate(160deg) skewX(-85deg);
-  transform: rotate(160deg) skewX(-85deg);
-  background-color: #00aaff;
-}
-.rainbow:nth-child(82) {
-  -webkit-transform: rotate(162deg) skewX(-85deg);
-  transform: rotate(162deg) skewX(-85deg);
-  background-color: #00b2ff;
-}
-.rainbow:nth-child(83) {
-  -webkit-transform: rotate(164deg) skewX(-85deg);
-  transform: rotate(164deg) skewX(-85deg);
-  background-color: #00bbff;
-}
-.rainbow:nth-child(84) {
-  -webkit-transform: rotate(166deg) skewX(-85deg);
-  transform: rotate(166deg) skewX(-85deg);
-  background-color: #00c3ff;
-}
-.rainbow:nth-child(85) {
-  -webkit-transform: rotate(168deg) skewX(-85deg);
-  transform: rotate(168deg) skewX(-85deg);
-  background-color: #00ccff;
-}
-.rainbow:nth-child(86) {
-  -webkit-transform: rotate(170deg) skewX(-85deg);
-  transform: rotate(170deg) skewX(-85deg);
-  background-color: #00d4ff;
-}
-.rainbow:nth-child(87) {
-  -webkit-transform: rotate(172deg) skewX(-85deg);
-  transform: rotate(172deg) skewX(-85deg);
-  background-color: #00ddff;
-}
-.rainbow:nth-child(88) {
-  -webkit-transform: rotate(174deg) skewX(-85deg);
-  transform: rotate(174deg) skewX(-85deg);
-  background-color: #00e5ff;
-}
-.rainbow:nth-child(89) {
-  -webkit-transform: rotate(176deg) skewX(-85deg);
-  transform: rotate(176deg) skewX(-85deg);
-  background-color: #00eeff;
-}
-.rainbow:nth-child(90) {
-  -webkit-transform: rotate(178deg) skewX(-85deg);
-  transform: rotate(178deg) skewX(-85deg);
-  background-color: #00f6ff;
-}
-.rainbow:nth-child(91) {
-  -webkit-transform: rotate(180deg) skewX(-85deg);
-  transform: rotate(180deg) skewX(-85deg);
-  background-color: cyan;
-}
-.rainbow:nth-child(92) {
-  -webkit-transform: rotate(182deg) skewX(-85deg);
-  transform: rotate(182deg) skewX(-85deg);
-  background-color: #00fff7;
-}
-.rainbow:nth-child(93) {
-  -webkit-transform: rotate(184deg) skewX(-85deg);
-  transform: rotate(184deg) skewX(-85deg);
-  background-color: #00ffee;
-}
-.rainbow:nth-child(94) {
-  -webkit-transform: rotate(186deg) skewX(-85deg);
-  transform: rotate(186deg) skewX(-85deg);
-  background-color: #00ffe6;
-}
-.rainbow:nth-child(95) {
-  -webkit-transform: rotate(188deg) skewX(-85deg);
-  transform: rotate(188deg) skewX(-85deg);
-  background-color: #00ffdd;
-}
-.rainbow:nth-child(96) {
-  -webkit-transform: rotate(190deg) skewX(-85deg);
-  transform: rotate(190deg) skewX(-85deg);
-  background-color: #00ffd5;
-}
-.rainbow:nth-child(97) {
-  -webkit-transform: rotate(192deg) skewX(-85deg);
-  transform: rotate(192deg) skewX(-85deg);
-  background-color: #00ffcc;
-}
-.rainbow:nth-child(98) {
-  -webkit-transform: rotate(194deg) skewX(-85deg);
-  transform: rotate(194deg) skewX(-85deg);
-  background-color: #00ffc4;
-}
-.rainbow:nth-child(99) {
-  -webkit-transform: rotate(196deg) skewX(-85deg);
-  transform: rotate(196deg) skewX(-85deg);
-  background-color: #00ffbb;
-}
-.rainbow:nth-child(100) {
-  -webkit-transform: rotate(198deg) skewX(-85deg);
-  transform: rotate(198deg) skewX(-85deg);
-  background-color: #00ffb3;
-}
-.rainbow:nth-child(101) {
-  -webkit-transform: rotate(200deg) skewX(-85deg);
-  transform: rotate(200deg) skewX(-85deg);
-  background-color: #00ffaa;
-}
-.rainbow:nth-child(102) {
-  -webkit-transform: rotate(202deg) skewX(-85deg);
-  transform: rotate(202deg) skewX(-85deg);
-  background-color: #00ffa2;
-}
-.rainbow:nth-child(103) {
-  -webkit-transform: rotate(204deg) skewX(-85deg);
-  transform: rotate(204deg) skewX(-85deg);
-  background-color: #00ff99;
-}
-.rainbow:nth-child(104) {
-  -webkit-transform: rotate(206deg) skewX(-85deg);
-  transform: rotate(206deg) skewX(-85deg);
-  background-color: #00ff91;
-}
-.rainbow:nth-child(105) {
-  -webkit-transform: rotate(208deg) skewX(-85deg);
-  transform: rotate(208deg) skewX(-85deg);
-  background-color: #00ff88;
-}
-.rainbow:nth-child(106) {
-  -webkit-transform: rotate(210deg) skewX(-85deg);
-  transform: rotate(210deg) skewX(-85deg);
-  background-color: #00ff80;
-}
-.rainbow:nth-child(107) {
-  -webkit-transform: rotate(212deg) skewX(-85deg);
-  transform: rotate(212deg) skewX(-85deg);
-  background-color: #00ff77;
-}
-.rainbow:nth-child(108) {
-  -webkit-transform: rotate(214deg) skewX(-85deg);
-  transform: rotate(214deg) skewX(-85deg);
-  background-color: #00ff6f;
-}
-.rainbow:nth-child(109) {
-  -webkit-transform: rotate(216deg) skewX(-85deg);
-  transform: rotate(216deg) skewX(-85deg);
-  background-color: #00ff66;
-}
-.rainbow:nth-child(110) {
-  -webkit-transform: rotate(218deg) skewX(-85deg);
-  transform: rotate(218deg) skewX(-85deg);
-  background-color: #00ff5e;
-}
-.rainbow:nth-child(111) {
-  -webkit-transform: rotate(220deg) skewX(-85deg);
-  transform: rotate(220deg) skewX(-85deg);
-  background-color: #00ff55;
-}
-.rainbow:nth-child(112) {
-  -webkit-transform: rotate(222deg) skewX(-85deg);
-  transform: rotate(222deg) skewX(-85deg);
-  background-color: #00ff4d;
-}
-.rainbow:nth-child(113) {
-  -webkit-transform: rotate(224deg) skewX(-85deg);
-  transform: rotate(224deg) skewX(-85deg);
-  background-color: #00ff44;
-}
-.rainbow:nth-child(114) {
-  -webkit-transform: rotate(226deg) skewX(-85deg);
-  transform: rotate(226deg) skewX(-85deg);
-  background-color: #00ff3c;
-}
-.rainbow:nth-child(115) {
-  -webkit-transform: rotate(228deg) skewX(-85deg);
-  transform: rotate(228deg) skewX(-85deg);
-  background-color: #00ff33;
-}
-.rainbow:nth-child(116) {
-  -webkit-transform: rotate(230deg) skewX(-85deg);
-  transform: rotate(230deg) skewX(-85deg);
-  background-color: #00ff2b;
-}
-.rainbow:nth-child(117) {
-  -webkit-transform: rotate(232deg) skewX(-85deg);
-  transform: rotate(232deg) skewX(-85deg);
-  background-color: #00ff22;
-}
-.rainbow:nth-child(118) {
-  -webkit-transform: rotate(234deg) skewX(-85deg);
-  transform: rotate(234deg) skewX(-85deg);
-  background-color: #00ff19;
-}
-.rainbow:nth-child(119) {
-  -webkit-transform: rotate(236deg) skewX(-85deg);
-  transform: rotate(236deg) skewX(-85deg);
-  background-color: #00ff11;
-}
-.rainbow:nth-child(120) {
-  -webkit-transform: rotate(238deg) skewX(-85deg);
-  transform: rotate(238deg) skewX(-85deg);
-  background-color: #00ff09;
-}
-.rainbow:nth-child(121) {
-  -webkit-transform: rotate(240deg) skewX(-85deg);
-  transform: rotate(240deg) skewX(-85deg);
-  background-color: lime;
-}
-.rainbow:nth-child(122) {
-  -webkit-transform: rotate(242deg) skewX(-85deg);
-  transform: rotate(242deg) skewX(-85deg);
-  background-color: #08ff00;
-}
-.rainbow:nth-child(123) {
-  -webkit-transform: rotate(244deg) skewX(-85deg);
-  transform: rotate(244deg) skewX(-85deg);
-  background-color: #11ff00;
-}
-.rainbow:nth-child(124) {
-  -webkit-transform: rotate(246deg) skewX(-85deg);
-  transform: rotate(246deg) skewX(-85deg);
-  background-color: #1aff00;
-}
-.rainbow:nth-child(125) {
-  -webkit-transform: rotate(248deg) skewX(-85deg);
-  transform: rotate(248deg) skewX(-85deg);
-  background-color: #22ff00;
-}
-.rainbow:nth-child(126) {
-  -webkit-transform: rotate(250deg) skewX(-85deg);
-  transform: rotate(250deg) skewX(-85deg);
-  background-color: #2bff00;
-}
-.rainbow:nth-child(127) {
-  -webkit-transform: rotate(252deg) skewX(-85deg);
-  transform: rotate(252deg) skewX(-85deg);
-  background-color: #33ff00;
-}
-.rainbow:nth-child(128) {
-  -webkit-transform: rotate(254deg) skewX(-85deg);
-  transform: rotate(254deg) skewX(-85deg);
-  background-color: #3bff00;
-}
-.rainbow:nth-child(129) {
-  -webkit-transform: rotate(256deg) skewX(-85deg);
-  transform: rotate(256deg) skewX(-85deg);
-  background-color: #44ff00;
-}
-.rainbow:nth-child(130) {
-  -webkit-transform: rotate(258deg) skewX(-85deg);
-  transform: rotate(258deg) skewX(-85deg);
-  background-color: #4cff00;
-}
-.rainbow:nth-child(131) {
-  -webkit-transform: rotate(260deg) skewX(-85deg);
-  transform: rotate(260deg) skewX(-85deg);
-  background-color: #55ff00;
-}
-.rainbow:nth-child(132) {
-  -webkit-transform: rotate(262deg) skewX(-85deg);
-  transform: rotate(262deg) skewX(-85deg);
-  background-color: #5eff00;
-}
-.rainbow:nth-child(133) {
-  -webkit-transform: rotate(264deg) skewX(-85deg);
-  transform: rotate(264deg) skewX(-85deg);
-  background-color: #66ff00;
-}
-.rainbow:nth-child(134) {
-  -webkit-transform: rotate(266deg) skewX(-85deg);
-  transform: rotate(266deg) skewX(-85deg);
-  background-color: #6eff00;
-}
-.rainbow:nth-child(135) {
-  -webkit-transform: rotate(268deg) skewX(-85deg);
-  transform: rotate(268deg) skewX(-85deg);
-  background-color: #77ff00;
-}
-.rainbow:nth-child(136) {
-  -webkit-transform: rotate(270deg) skewX(-85deg);
-  transform: rotate(270deg) skewX(-85deg);
-  background-color: #80ff00;
-}
-.rainbow:nth-child(137) {
-  -webkit-transform: rotate(272deg) skewX(-85deg);
-  transform: rotate(272deg) skewX(-85deg);
-  background-color: #88ff00;
-}
-.rainbow:nth-child(138) {
-  -webkit-transform: rotate(274deg) skewX(-85deg);
-  transform: rotate(274deg) skewX(-85deg);
-  background-color: #91ff00;
-}
-.rainbow:nth-child(139) {
-  -webkit-transform: rotate(276deg) skewX(-85deg);
-  transform: rotate(276deg) skewX(-85deg);
-  background-color: #99ff00;
-}
-.rainbow:nth-child(140) {
-  -webkit-transform: rotate(278deg) skewX(-85deg);
-  transform: rotate(278deg) skewX(-85deg);
-  background-color: #a1ff00;
-}
-.rainbow:nth-child(141) {
-  -webkit-transform: rotate(280deg) skewX(-85deg);
-  transform: rotate(280deg) skewX(-85deg);
-  background-color: #aaff00;
-}
-.rainbow:nth-child(142) {
-  -webkit-transform: rotate(282deg) skewX(-85deg);
-  transform: rotate(282deg) skewX(-85deg);
-  background-color: #b2ff00;
-}
-.rainbow:nth-child(143) {
-  -webkit-transform: rotate(284deg) skewX(-85deg);
-  transform: rotate(284deg) skewX(-85deg);
-  background-color: #bbff00;
-}
-.rainbow:nth-child(144) {
-  -webkit-transform: rotate(286deg) skewX(-85deg);
-  transform: rotate(286deg) skewX(-85deg);
-  background-color: #c3ff00;
-}
-.rainbow:nth-child(145) {
-  -webkit-transform: rotate(288deg) skewX(-85deg);
-  transform: rotate(288deg) skewX(-85deg);
-  background-color: #ccff00;
-}
-.rainbow:nth-child(146) {
-  -webkit-transform: rotate(290deg) skewX(-85deg);
-  transform: rotate(290deg) skewX(-85deg);
-  background-color: #d4ff00;
-}
-.rainbow:nth-child(147) {
-  -webkit-transform: rotate(292deg) skewX(-85deg);
-  transform: rotate(292deg) skewX(-85deg);
-  background-color: #ddff00;
-}
-.rainbow:nth-child(148) {
-  -webkit-transform: rotate(294deg) skewX(-85deg);
-  transform: rotate(294deg) skewX(-85deg);
-  background-color: #e6ff00;
-}
-.rainbow:nth-child(149) {
-  -webkit-transform: rotate(296deg) skewX(-85deg);
-  transform: rotate(296deg) skewX(-85deg);
-  background-color: #eeff00;
-}
-.rainbow:nth-child(150) {
-  -webkit-transform: rotate(298deg) skewX(-85deg);
-  transform: rotate(298deg) skewX(-85deg);
-  background-color: #f6ff00;
-}
-.rainbow:nth-child(151) {
-  -webkit-transform: rotate(300deg) skewX(-85deg);
-  transform: rotate(300deg) skewX(-85deg);
-  background-color: yellow;
-}
-.rainbow:nth-child(152) {
-  -webkit-transform: rotate(302deg) skewX(-85deg);
-  transform: rotate(302deg) skewX(-85deg);
-  background-color: #fff700;
-}
-.rainbow:nth-child(153) {
-  -webkit-transform: rotate(304deg) skewX(-85deg);
-  transform: rotate(304deg) skewX(-85deg);
-  background-color: #ffee00;
-}
-.rainbow:nth-child(154) {
-  -webkit-transform: rotate(306deg) skewX(-85deg);
-  transform: rotate(306deg) skewX(-85deg);
-  background-color: #ffe500;
-}
-.rainbow:nth-child(155) {
-  -webkit-transform: rotate(308deg) skewX(-85deg);
-  transform: rotate(308deg) skewX(-85deg);
-  background-color: #ffdd00;
-}
-.rainbow:nth-child(156) {
-  -webkit-transform: rotate(310deg) skewX(-85deg);
-  transform: rotate(310deg) skewX(-85deg);
-  background-color: #ffd500;
-}
-.rainbow:nth-child(157) {
-  -webkit-transform: rotate(312deg) skewX(-85deg);
-  transform: rotate(312deg) skewX(-85deg);
-  background-color: #ffcc00;
-}
-.rainbow:nth-child(158) {
-  -webkit-transform: rotate(314deg) skewX(-85deg);
-  transform: rotate(314deg) skewX(-85deg);
-  background-color: #ffc300;
-}
-.rainbow:nth-child(159) {
-  -webkit-transform: rotate(316deg) skewX(-85deg);
-  transform: rotate(316deg) skewX(-85deg);
-  background-color: #ffbb00;
-}
-.rainbow:nth-child(160) {
-  -webkit-transform: rotate(318deg) skewX(-85deg);
-  transform: rotate(318deg) skewX(-85deg);
-  background-color: #ffb300;
-}
-.rainbow:nth-child(161) {
-  -webkit-transform: rotate(320deg) skewX(-85deg);
-  transform: rotate(320deg) skewX(-85deg);
-  background-color: #ffaa00;
-}
-.rainbow:nth-child(162) {
-  -webkit-transform: rotate(322deg) skewX(-85deg);
-  transform: rotate(322deg) skewX(-85deg);
-  background-color: #ffa200;
-}
-.rainbow:nth-child(163) {
-  -webkit-transform: rotate(324deg) skewX(-85deg);
-  transform: rotate(324deg) skewX(-85deg);
-  background-color: #ff9900;
-}
-.rainbow:nth-child(164) {
-  -webkit-transform: rotate(326deg) skewX(-85deg);
-  transform: rotate(326deg) skewX(-85deg);
-  background-color: #ff9100;
-}
-.rainbow:nth-child(165) {
-  -webkit-transform: rotate(328deg) skewX(-85deg);
-  transform: rotate(328deg) skewX(-85deg);
-  background-color: #ff8800;
-}
-.rainbow:nth-child(166) {
-  -webkit-transform: rotate(330deg) skewX(-85deg);
-  transform: rotate(330deg) skewX(-85deg);
-  background-color: #ff8000;
-}
-.rainbow:nth-child(167) {
-  -webkit-transform: rotate(332deg) skewX(-85deg);
-  transform: rotate(332deg) skewX(-85deg);
-  background-color: #ff7700;
-}
-.rainbow:nth-child(168) {
-  -webkit-transform: rotate(334deg) skewX(-85deg);
-  transform: rotate(334deg) skewX(-85deg);
-  background-color: #ff6e00;
-}
-.rainbow:nth-child(169) {
-  -webkit-transform: rotate(336deg) skewX(-85deg);
-  transform: rotate(336deg) skewX(-85deg);
-  background-color: #ff6600;
-}
-.rainbow:nth-child(170) {
-  -webkit-transform: rotate(338deg) skewX(-85deg);
-  transform: rotate(338deg) skewX(-85deg);
-  background-color: #ff5e00;
-}
-.rainbow:nth-child(171) {
-  -webkit-transform: rotate(340deg) skewX(-85deg);
-  transform: rotate(340deg) skewX(-85deg);
-  background-color: #ff5500;
-}
-.rainbow:nth-child(172) {
-  -webkit-transform: rotate(342deg) skewX(-85deg);
-  transform: rotate(342deg) skewX(-85deg);
-  background-color: #ff4d00;
-}
-.rainbow:nth-child(173) {
-  -webkit-transform: rotate(344deg) skewX(-85deg);
-  transform: rotate(344deg) skewX(-85deg);
-  background-color: #ff4400;
-}
-.rainbow:nth-child(174) {
-  -webkit-transform: rotate(346deg) skewX(-85deg);
-  transform: rotate(346deg) skewX(-85deg);
-  background-color: #ff3c00;
-}
-.rainbow:nth-child(175) {
-  -webkit-transform: rotate(348deg) skewX(-85deg);
-  transform: rotate(348deg) skewX(-85deg);
-  background-color: #ff3300;
-}
-.rainbow:nth-child(176) {
-  -webkit-transform: rotate(350deg) skewX(-85deg);
-  transform: rotate(350deg) skewX(-85deg);
-  background-color: #ff2b00;
-}
-.rainbow:nth-child(177) {
-  -webkit-transform: rotate(352deg) skewX(-85deg);
-  transform: rotate(352deg) skewX(-85deg);
-  background-color: #ff2200;
-}
-.rainbow:nth-child(178) {
-  -webkit-transform: rotate(354deg) skewX(-85deg);
-  transform: rotate(354deg) skewX(-85deg);
-  background-color: #ff1a00;
-}
-.rainbow:nth-child(179) {
-  -webkit-transform: rotate(356deg) skewX(-85deg);
-  transform: rotate(356deg) skewX(-85deg);
-  background-color: #ff1100;
-}
-.rainbow:nth-child(180) {
-  -webkit-transform: rotate(358deg) skewX(-85deg);
-  transform: rotate(358deg) skewX(-85deg);
-  background-color: #ff0900;
-}
+  top: 120px; }
+  .rainbow-color:nth-child(1) {
+    -webkit-transform: rotate(0deg) skewX(-85deg);
+    transform: rotate(0deg) skewX(-85deg);
+    background-color: red; }
+  .rainbow-color:nth-child(2) {
+    -webkit-transform: rotate(2deg) skewX(-85deg);
+    transform: rotate(2deg) skewX(-85deg);
+    background-color: #ff0008; }
+  .rainbow-color:nth-child(3) {
+    -webkit-transform: rotate(4deg) skewX(-85deg);
+    transform: rotate(4deg) skewX(-85deg);
+    background-color: #ff0011; }
+  .rainbow-color:nth-child(4) {
+    -webkit-transform: rotate(6deg) skewX(-85deg);
+    transform: rotate(6deg) skewX(-85deg);
+    background-color: #ff001a; }
+  .rainbow-color:nth-child(5) {
+    -webkit-transform: rotate(8deg) skewX(-85deg);
+    transform: rotate(8deg) skewX(-85deg);
+    background-color: #ff0022; }
+  .rainbow-color:nth-child(6) {
+    -webkit-transform: rotate(10deg) skewX(-85deg);
+    transform: rotate(10deg) skewX(-85deg);
+    background-color: #ff002b; }
+  .rainbow-color:nth-child(7) {
+    -webkit-transform: rotate(12deg) skewX(-85deg);
+    transform: rotate(12deg) skewX(-85deg);
+    background-color: #ff0033; }
+  .rainbow-color:nth-child(8) {
+    -webkit-transform: rotate(14deg) skewX(-85deg);
+    transform: rotate(14deg) skewX(-85deg);
+    background-color: #ff003b; }
+  .rainbow-color:nth-child(9) {
+    -webkit-transform: rotate(16deg) skewX(-85deg);
+    transform: rotate(16deg) skewX(-85deg);
+    background-color: #ff0044; }
+  .rainbow-color:nth-child(10) {
+    -webkit-transform: rotate(18deg) skewX(-85deg);
+    transform: rotate(18deg) skewX(-85deg);
+    background-color: #ff004c; }
+  .rainbow-color:nth-child(11) {
+    -webkit-transform: rotate(20deg) skewX(-85deg);
+    transform: rotate(20deg) skewX(-85deg);
+    background-color: #ff0055; }
+  .rainbow-color:nth-child(12) {
+    -webkit-transform: rotate(22deg) skewX(-85deg);
+    transform: rotate(22deg) skewX(-85deg);
+    background-color: #ff005d; }
+  .rainbow-color:nth-child(13) {
+    -webkit-transform: rotate(24deg) skewX(-85deg);
+    transform: rotate(24deg) skewX(-85deg);
+    background-color: #ff0066; }
+  .rainbow-color:nth-child(14) {
+    -webkit-transform: rotate(26deg) skewX(-85deg);
+    transform: rotate(26deg) skewX(-85deg);
+    background-color: #ff006e; }
+  .rainbow-color:nth-child(15) {
+    -webkit-transform: rotate(28deg) skewX(-85deg);
+    transform: rotate(28deg) skewX(-85deg);
+    background-color: #ff0077; }
+  .rainbow-color:nth-child(16) {
+    -webkit-transform: rotate(30deg) skewX(-85deg);
+    transform: rotate(30deg) skewX(-85deg);
+    background-color: #ff0080; }
+  .rainbow-color:nth-child(17) {
+    -webkit-transform: rotate(32deg) skewX(-85deg);
+    transform: rotate(32deg) skewX(-85deg);
+    background-color: #ff0088; }
+  .rainbow-color:nth-child(18) {
+    -webkit-transform: rotate(34deg) skewX(-85deg);
+    transform: rotate(34deg) skewX(-85deg);
+    background-color: #ff0091; }
+  .rainbow-color:nth-child(19) {
+    -webkit-transform: rotate(36deg) skewX(-85deg);
+    transform: rotate(36deg) skewX(-85deg);
+    background-color: #ff0099; }
+  .rainbow-color:nth-child(20) {
+    -webkit-transform: rotate(38deg) skewX(-85deg);
+    transform: rotate(38deg) skewX(-85deg);
+    background-color: #ff00a1; }
+  .rainbow-color:nth-child(21) {
+    -webkit-transform: rotate(40deg) skewX(-85deg);
+    transform: rotate(40deg) skewX(-85deg);
+    background-color: #ff00aa; }
+  .rainbow-color:nth-child(22) {
+    -webkit-transform: rotate(42deg) skewX(-85deg);
+    transform: rotate(42deg) skewX(-85deg);
+    background-color: #ff00b2; }
+  .rainbow-color:nth-child(23) {
+    -webkit-transform: rotate(44deg) skewX(-85deg);
+    transform: rotate(44deg) skewX(-85deg);
+    background-color: #ff00bb; }
+  .rainbow-color:nth-child(24) {
+    -webkit-transform: rotate(46deg) skewX(-85deg);
+    transform: rotate(46deg) skewX(-85deg);
+    background-color: #ff00c3; }
+  .rainbow-color:nth-child(25) {
+    -webkit-transform: rotate(48deg) skewX(-85deg);
+    transform: rotate(48deg) skewX(-85deg);
+    background-color: #ff00cc; }
+  .rainbow-color:nth-child(26) {
+    -webkit-transform: rotate(50deg) skewX(-85deg);
+    transform: rotate(50deg) skewX(-85deg);
+    background-color: #ff00d4; }
+  .rainbow-color:nth-child(27) {
+    -webkit-transform: rotate(52deg) skewX(-85deg);
+    transform: rotate(52deg) skewX(-85deg);
+    background-color: #ff00dd; }
+  .rainbow-color:nth-child(28) {
+    -webkit-transform: rotate(54deg) skewX(-85deg);
+    transform: rotate(54deg) skewX(-85deg);
+    background-color: #ff00e6; }
+  .rainbow-color:nth-child(29) {
+    -webkit-transform: rotate(56deg) skewX(-85deg);
+    transform: rotate(56deg) skewX(-85deg);
+    background-color: #ff00ee; }
+  .rainbow-color:nth-child(30) {
+    -webkit-transform: rotate(58deg) skewX(-85deg);
+    transform: rotate(58deg) skewX(-85deg);
+    background-color: #ff00f6; }
+  .rainbow-color:nth-child(31) {
+    -webkit-transform: rotate(60deg) skewX(-85deg);
+    transform: rotate(60deg) skewX(-85deg);
+    background-color: magenta; }
+  .rainbow-color:nth-child(32) {
+    -webkit-transform: rotate(62deg) skewX(-85deg);
+    transform: rotate(62deg) skewX(-85deg);
+    background-color: #f600ff; }
+  .rainbow-color:nth-child(33) {
+    -webkit-transform: rotate(64deg) skewX(-85deg);
+    transform: rotate(64deg) skewX(-85deg);
+    background-color: #ee00ff; }
+  .rainbow-color:nth-child(34) {
+    -webkit-transform: rotate(66deg) skewX(-85deg);
+    transform: rotate(66deg) skewX(-85deg);
+    background-color: #e500ff; }
+  .rainbow-color:nth-child(35) {
+    -webkit-transform: rotate(68deg) skewX(-85deg);
+    transform: rotate(68deg) skewX(-85deg);
+    background-color: #dd00ff; }
+  .rainbow-color:nth-child(36) {
+    -webkit-transform: rotate(70deg) skewX(-85deg);
+    transform: rotate(70deg) skewX(-85deg);
+    background-color: #d400ff; }
+  .rainbow-color:nth-child(37) {
+    -webkit-transform: rotate(72deg) skewX(-85deg);
+    transform: rotate(72deg) skewX(-85deg);
+    background-color: #cc00ff; }
+  .rainbow-color:nth-child(38) {
+    -webkit-transform: rotate(74deg) skewX(-85deg);
+    transform: rotate(74deg) skewX(-85deg);
+    background-color: #c300ff; }
+  .rainbow-color:nth-child(39) {
+    -webkit-transform: rotate(76deg) skewX(-85deg);
+    transform: rotate(76deg) skewX(-85deg);
+    background-color: #bb00ff; }
+  .rainbow-color:nth-child(40) {
+    -webkit-transform: rotate(78deg) skewX(-85deg);
+    transform: rotate(78deg) skewX(-85deg);
+    background-color: #b300ff; }
+  .rainbow-color:nth-child(41) {
+    -webkit-transform: rotate(80deg) skewX(-85deg);
+    transform: rotate(80deg) skewX(-85deg);
+    background-color: #aa00ff; }
+  .rainbow-color:nth-child(42) {
+    -webkit-transform: rotate(82deg) skewX(-85deg);
+    transform: rotate(82deg) skewX(-85deg);
+    background-color: #a200ff; }
+  .rainbow-color:nth-child(43) {
+    -webkit-transform: rotate(84deg) skewX(-85deg);
+    transform: rotate(84deg) skewX(-85deg);
+    background-color: #9900ff; }
+  .rainbow-color:nth-child(44) {
+    -webkit-transform: rotate(86deg) skewX(-85deg);
+    transform: rotate(86deg) skewX(-85deg);
+    background-color: #9000ff; }
+  .rainbow-color:nth-child(45) {
+    -webkit-transform: rotate(88deg) skewX(-85deg);
+    transform: rotate(88deg) skewX(-85deg);
+    background-color: #8800ff; }
+  .rainbow-color:nth-child(46) {
+    -webkit-transform: rotate(90deg) skewX(-85deg);
+    transform: rotate(90deg) skewX(-85deg);
+    background-color: #7f00ff; }
+  .rainbow-color:nth-child(47) {
+    -webkit-transform: rotate(92deg) skewX(-85deg);
+    transform: rotate(92deg) skewX(-85deg);
+    background-color: #7700ff; }
+  .rainbow-color:nth-child(48) {
+    -webkit-transform: rotate(94deg) skewX(-85deg);
+    transform: rotate(94deg) skewX(-85deg);
+    background-color: #6e00ff; }
+  .rainbow-color:nth-child(49) {
+    -webkit-transform: rotate(96deg) skewX(-85deg);
+    transform: rotate(96deg) skewX(-85deg);
+    background-color: #6600ff; }
+  .rainbow-color:nth-child(50) {
+    -webkit-transform: rotate(98deg) skewX(-85deg);
+    transform: rotate(98deg) skewX(-85deg);
+    background-color: #5e00ff; }
+  .rainbow-color:nth-child(51) {
+    -webkit-transform: rotate(100deg) skewX(-85deg);
+    transform: rotate(100deg) skewX(-85deg);
+    background-color: #5500ff; }
+  .rainbow-color:nth-child(52) {
+    -webkit-transform: rotate(102deg) skewX(-85deg);
+    transform: rotate(102deg) skewX(-85deg);
+    background-color: #4d00ff; }
+  .rainbow-color:nth-child(53) {
+    -webkit-transform: rotate(104deg) skewX(-85deg);
+    transform: rotate(104deg) skewX(-85deg);
+    background-color: #4400ff; }
+  .rainbow-color:nth-child(54) {
+    -webkit-transform: rotate(106deg) skewX(-85deg);
+    transform: rotate(106deg) skewX(-85deg);
+    background-color: #3c00ff; }
+  .rainbow-color:nth-child(55) {
+    -webkit-transform: rotate(108deg) skewX(-85deg);
+    transform: rotate(108deg) skewX(-85deg);
+    background-color: #3300ff; }
+  .rainbow-color:nth-child(56) {
+    -webkit-transform: rotate(110deg) skewX(-85deg);
+    transform: rotate(110deg) skewX(-85deg);
+    background-color: #2a00ff; }
+  .rainbow-color:nth-child(57) {
+    -webkit-transform: rotate(112deg) skewX(-85deg);
+    transform: rotate(112deg) skewX(-85deg);
+    background-color: #2200ff; }
+  .rainbow-color:nth-child(58) {
+    -webkit-transform: rotate(114deg) skewX(-85deg);
+    transform: rotate(114deg) skewX(-85deg);
+    background-color: #1900ff; }
+  .rainbow-color:nth-child(59) {
+    -webkit-transform: rotate(116deg) skewX(-85deg);
+    transform: rotate(116deg) skewX(-85deg);
+    background-color: #1100ff; }
+  .rainbow-color:nth-child(60) {
+    -webkit-transform: rotate(118deg) skewX(-85deg);
+    transform: rotate(118deg) skewX(-85deg);
+    background-color: #0800ff; }
+  .rainbow-color:nth-child(61) {
+    -webkit-transform: rotate(120deg) skewX(-85deg);
+    transform: rotate(120deg) skewX(-85deg);
+    background-color: blue; }
+  .rainbow-color:nth-child(62) {
+    -webkit-transform: rotate(122deg) skewX(-85deg);
+    transform: rotate(122deg) skewX(-85deg);
+    background-color: #0008ff; }
+  .rainbow-color:nth-child(63) {
+    -webkit-transform: rotate(124deg) skewX(-85deg);
+    transform: rotate(124deg) skewX(-85deg);
+    background-color: #0011ff; }
+  .rainbow-color:nth-child(64) {
+    -webkit-transform: rotate(126deg) skewX(-85deg);
+    transform: rotate(126deg) skewX(-85deg);
+    background-color: #0019ff; }
+  .rainbow-color:nth-child(65) {
+    -webkit-transform: rotate(128deg) skewX(-85deg);
+    transform: rotate(128deg) skewX(-85deg);
+    background-color: #0022ff; }
+  .rainbow-color:nth-child(66) {
+    -webkit-transform: rotate(130deg) skewX(-85deg);
+    transform: rotate(130deg) skewX(-85deg);
+    background-color: #002bff; }
+  .rainbow-color:nth-child(67) {
+    -webkit-transform: rotate(132deg) skewX(-85deg);
+    transform: rotate(132deg) skewX(-85deg);
+    background-color: #0033ff; }
+  .rainbow-color:nth-child(68) {
+    -webkit-transform: rotate(134deg) skewX(-85deg);
+    transform: rotate(134deg) skewX(-85deg);
+    background-color: #003bff; }
+  .rainbow-color:nth-child(69) {
+    -webkit-transform: rotate(136deg) skewX(-85deg);
+    transform: rotate(136deg) skewX(-85deg);
+    background-color: #0044ff; }
+  .rainbow-color:nth-child(70) {
+    -webkit-transform: rotate(138deg) skewX(-85deg);
+    transform: rotate(138deg) skewX(-85deg);
+    background-color: #004cff; }
+  .rainbow-color:nth-child(71) {
+    -webkit-transform: rotate(140deg) skewX(-85deg);
+    transform: rotate(140deg) skewX(-85deg);
+    background-color: #0055ff; }
+  .rainbow-color:nth-child(72) {
+    -webkit-transform: rotate(142deg) skewX(-85deg);
+    transform: rotate(142deg) skewX(-85deg);
+    background-color: #005eff; }
+  .rainbow-color:nth-child(73) {
+    -webkit-transform: rotate(144deg) skewX(-85deg);
+    transform: rotate(144deg) skewX(-85deg);
+    background-color: #0066ff; }
+  .rainbow-color:nth-child(74) {
+    -webkit-transform: rotate(146deg) skewX(-85deg);
+    transform: rotate(146deg) skewX(-85deg);
+    background-color: #006eff; }
+  .rainbow-color:nth-child(75) {
+    -webkit-transform: rotate(148deg) skewX(-85deg);
+    transform: rotate(148deg) skewX(-85deg);
+    background-color: #0077ff; }
+  .rainbow-color:nth-child(76) {
+    -webkit-transform: rotate(150deg) skewX(-85deg);
+    transform: rotate(150deg) skewX(-85deg);
+    background-color: #007fff; }
+  .rainbow-color:nth-child(77) {
+    -webkit-transform: rotate(152deg) skewX(-85deg);
+    transform: rotate(152deg) skewX(-85deg);
+    background-color: #0088ff; }
+  .rainbow-color:nth-child(78) {
+    -webkit-transform: rotate(154deg) skewX(-85deg);
+    transform: rotate(154deg) skewX(-85deg);
+    background-color: #0091ff; }
+  .rainbow-color:nth-child(79) {
+    -webkit-transform: rotate(156deg) skewX(-85deg);
+    transform: rotate(156deg) skewX(-85deg);
+    background-color: #0099ff; }
+  .rainbow-color:nth-child(80) {
+    -webkit-transform: rotate(158deg) skewX(-85deg);
+    transform: rotate(158deg) skewX(-85deg);
+    background-color: #00a1ff; }
+  .rainbow-color:nth-child(81) {
+    -webkit-transform: rotate(160deg) skewX(-85deg);
+    transform: rotate(160deg) skewX(-85deg);
+    background-color: #00aaff; }
+  .rainbow-color:nth-child(82) {
+    -webkit-transform: rotate(162deg) skewX(-85deg);
+    transform: rotate(162deg) skewX(-85deg);
+    background-color: #00b2ff; }
+  .rainbow-color:nth-child(83) {
+    -webkit-transform: rotate(164deg) skewX(-85deg);
+    transform: rotate(164deg) skewX(-85deg);
+    background-color: #00bbff; }
+  .rainbow-color:nth-child(84) {
+    -webkit-transform: rotate(166deg) skewX(-85deg);
+    transform: rotate(166deg) skewX(-85deg);
+    background-color: #00c3ff; }
+  .rainbow-color:nth-child(85) {
+    -webkit-transform: rotate(168deg) skewX(-85deg);
+    transform: rotate(168deg) skewX(-85deg);
+    background-color: #00ccff; }
+  .rainbow-color:nth-child(86) {
+    -webkit-transform: rotate(170deg) skewX(-85deg);
+    transform: rotate(170deg) skewX(-85deg);
+    background-color: #00d4ff; }
+  .rainbow-color:nth-child(87) {
+    -webkit-transform: rotate(172deg) skewX(-85deg);
+    transform: rotate(172deg) skewX(-85deg);
+    background-color: #00ddff; }
+  .rainbow-color:nth-child(88) {
+    -webkit-transform: rotate(174deg) skewX(-85deg);
+    transform: rotate(174deg) skewX(-85deg);
+    background-color: #00e5ff; }
+  .rainbow-color:nth-child(89) {
+    -webkit-transform: rotate(176deg) skewX(-85deg);
+    transform: rotate(176deg) skewX(-85deg);
+    background-color: #00eeff; }
+  .rainbow-color:nth-child(90) {
+    -webkit-transform: rotate(178deg) skewX(-85deg);
+    transform: rotate(178deg) skewX(-85deg);
+    background-color: #00f6ff; }
+  .rainbow-color:nth-child(91) {
+    -webkit-transform: rotate(180deg) skewX(-85deg);
+    transform: rotate(180deg) skewX(-85deg);
+    background-color: cyan; }
+  .rainbow-color:nth-child(92) {
+    -webkit-transform: rotate(182deg) skewX(-85deg);
+    transform: rotate(182deg) skewX(-85deg);
+    background-color: #00fff7; }
+  .rainbow-color:nth-child(93) {
+    -webkit-transform: rotate(184deg) skewX(-85deg);
+    transform: rotate(184deg) skewX(-85deg);
+    background-color: #00ffee; }
+  .rainbow-color:nth-child(94) {
+    -webkit-transform: rotate(186deg) skewX(-85deg);
+    transform: rotate(186deg) skewX(-85deg);
+    background-color: #00ffe6; }
+  .rainbow-color:nth-child(95) {
+    -webkit-transform: rotate(188deg) skewX(-85deg);
+    transform: rotate(188deg) skewX(-85deg);
+    background-color: #00ffdd; }
+  .rainbow-color:nth-child(96) {
+    -webkit-transform: rotate(190deg) skewX(-85deg);
+    transform: rotate(190deg) skewX(-85deg);
+    background-color: #00ffd5; }
+  .rainbow-color:nth-child(97) {
+    -webkit-transform: rotate(192deg) skewX(-85deg);
+    transform: rotate(192deg) skewX(-85deg);
+    background-color: #00ffcc; }
+  .rainbow-color:nth-child(98) {
+    -webkit-transform: rotate(194deg) skewX(-85deg);
+    transform: rotate(194deg) skewX(-85deg);
+    background-color: #00ffc4; }
+  .rainbow-color:nth-child(99) {
+    -webkit-transform: rotate(196deg) skewX(-85deg);
+    transform: rotate(196deg) skewX(-85deg);
+    background-color: #00ffbb; }
+  .rainbow-color:nth-child(100) {
+    -webkit-transform: rotate(198deg) skewX(-85deg);
+    transform: rotate(198deg) skewX(-85deg);
+    background-color: #00ffb3; }
+  .rainbow-color:nth-child(101) {
+    -webkit-transform: rotate(200deg) skewX(-85deg);
+    transform: rotate(200deg) skewX(-85deg);
+    background-color: #00ffaa; }
+  .rainbow-color:nth-child(102) {
+    -webkit-transform: rotate(202deg) skewX(-85deg);
+    transform: rotate(202deg) skewX(-85deg);
+    background-color: #00ffa2; }
+  .rainbow-color:nth-child(103) {
+    -webkit-transform: rotate(204deg) skewX(-85deg);
+    transform: rotate(204deg) skewX(-85deg);
+    background-color: #00ff99; }
+  .rainbow-color:nth-child(104) {
+    -webkit-transform: rotate(206deg) skewX(-85deg);
+    transform: rotate(206deg) skewX(-85deg);
+    background-color: #00ff91; }
+  .rainbow-color:nth-child(105) {
+    -webkit-transform: rotate(208deg) skewX(-85deg);
+    transform: rotate(208deg) skewX(-85deg);
+    background-color: #00ff88; }
+  .rainbow-color:nth-child(106) {
+    -webkit-transform: rotate(210deg) skewX(-85deg);
+    transform: rotate(210deg) skewX(-85deg);
+    background-color: #00ff80; }
+  .rainbow-color:nth-child(107) {
+    -webkit-transform: rotate(212deg) skewX(-85deg);
+    transform: rotate(212deg) skewX(-85deg);
+    background-color: #00ff77; }
+  .rainbow-color:nth-child(108) {
+    -webkit-transform: rotate(214deg) skewX(-85deg);
+    transform: rotate(214deg) skewX(-85deg);
+    background-color: #00ff6f; }
+  .rainbow-color:nth-child(109) {
+    -webkit-transform: rotate(216deg) skewX(-85deg);
+    transform: rotate(216deg) skewX(-85deg);
+    background-color: #00ff66; }
+  .rainbow-color:nth-child(110) {
+    -webkit-transform: rotate(218deg) skewX(-85deg);
+    transform: rotate(218deg) skewX(-85deg);
+    background-color: #00ff5e; }
+  .rainbow-color:nth-child(111) {
+    -webkit-transform: rotate(220deg) skewX(-85deg);
+    transform: rotate(220deg) skewX(-85deg);
+    background-color: #00ff55; }
+  .rainbow-color:nth-child(112) {
+    -webkit-transform: rotate(222deg) skewX(-85deg);
+    transform: rotate(222deg) skewX(-85deg);
+    background-color: #00ff4d; }
+  .rainbow-color:nth-child(113) {
+    -webkit-transform: rotate(224deg) skewX(-85deg);
+    transform: rotate(224deg) skewX(-85deg);
+    background-color: #00ff44; }
+  .rainbow-color:nth-child(114) {
+    -webkit-transform: rotate(226deg) skewX(-85deg);
+    transform: rotate(226deg) skewX(-85deg);
+    background-color: #00ff3c; }
+  .rainbow-color:nth-child(115) {
+    -webkit-transform: rotate(228deg) skewX(-85deg);
+    transform: rotate(228deg) skewX(-85deg);
+    background-color: #00ff33; }
+  .rainbow-color:nth-child(116) {
+    -webkit-transform: rotate(230deg) skewX(-85deg);
+    transform: rotate(230deg) skewX(-85deg);
+    background-color: #00ff2b; }
+  .rainbow-color:nth-child(117) {
+    -webkit-transform: rotate(232deg) skewX(-85deg);
+    transform: rotate(232deg) skewX(-85deg);
+    background-color: #00ff22; }
+  .rainbow-color:nth-child(118) {
+    -webkit-transform: rotate(234deg) skewX(-85deg);
+    transform: rotate(234deg) skewX(-85deg);
+    background-color: #00ff19; }
+  .rainbow-color:nth-child(119) {
+    -webkit-transform: rotate(236deg) skewX(-85deg);
+    transform: rotate(236deg) skewX(-85deg);
+    background-color: #00ff11; }
+  .rainbow-color:nth-child(120) {
+    -webkit-transform: rotate(238deg) skewX(-85deg);
+    transform: rotate(238deg) skewX(-85deg);
+    background-color: #00ff09; }
+  .rainbow-color:nth-child(121) {
+    -webkit-transform: rotate(240deg) skewX(-85deg);
+    transform: rotate(240deg) skewX(-85deg);
+    background-color: lime; }
+  .rainbow-color:nth-child(122) {
+    -webkit-transform: rotate(242deg) skewX(-85deg);
+    transform: rotate(242deg) skewX(-85deg);
+    background-color: #08ff00; }
+  .rainbow-color:nth-child(123) {
+    -webkit-transform: rotate(244deg) skewX(-85deg);
+    transform: rotate(244deg) skewX(-85deg);
+    background-color: #11ff00; }
+  .rainbow-color:nth-child(124) {
+    -webkit-transform: rotate(246deg) skewX(-85deg);
+    transform: rotate(246deg) skewX(-85deg);
+    background-color: #1aff00; }
+  .rainbow-color:nth-child(125) {
+    -webkit-transform: rotate(248deg) skewX(-85deg);
+    transform: rotate(248deg) skewX(-85deg);
+    background-color: #22ff00; }
+  .rainbow-color:nth-child(126) {
+    -webkit-transform: rotate(250deg) skewX(-85deg);
+    transform: rotate(250deg) skewX(-85deg);
+    background-color: #2bff00; }
+  .rainbow-color:nth-child(127) {
+    -webkit-transform: rotate(252deg) skewX(-85deg);
+    transform: rotate(252deg) skewX(-85deg);
+    background-color: #33ff00; }
+  .rainbow-color:nth-child(128) {
+    -webkit-transform: rotate(254deg) skewX(-85deg);
+    transform: rotate(254deg) skewX(-85deg);
+    background-color: #3bff00; }
+  .rainbow-color:nth-child(129) {
+    -webkit-transform: rotate(256deg) skewX(-85deg);
+    transform: rotate(256deg) skewX(-85deg);
+    background-color: #44ff00; }
+  .rainbow-color:nth-child(130) {
+    -webkit-transform: rotate(258deg) skewX(-85deg);
+    transform: rotate(258deg) skewX(-85deg);
+    background-color: #4cff00; }
+  .rainbow-color:nth-child(131) {
+    -webkit-transform: rotate(260deg) skewX(-85deg);
+    transform: rotate(260deg) skewX(-85deg);
+    background-color: #55ff00; }
+  .rainbow-color:nth-child(132) {
+    -webkit-transform: rotate(262deg) skewX(-85deg);
+    transform: rotate(262deg) skewX(-85deg);
+    background-color: #5eff00; }
+  .rainbow-color:nth-child(133) {
+    -webkit-transform: rotate(264deg) skewX(-85deg);
+    transform: rotate(264deg) skewX(-85deg);
+    background-color: #66ff00; }
+  .rainbow-color:nth-child(134) {
+    -webkit-transform: rotate(266deg) skewX(-85deg);
+    transform: rotate(266deg) skewX(-85deg);
+    background-color: #6eff00; }
+  .rainbow-color:nth-child(135) {
+    -webkit-transform: rotate(268deg) skewX(-85deg);
+    transform: rotate(268deg) skewX(-85deg);
+    background-color: #77ff00; }
+  .rainbow-color:nth-child(136) {
+    -webkit-transform: rotate(270deg) skewX(-85deg);
+    transform: rotate(270deg) skewX(-85deg);
+    background-color: #80ff00; }
+  .rainbow-color:nth-child(137) {
+    -webkit-transform: rotate(272deg) skewX(-85deg);
+    transform: rotate(272deg) skewX(-85deg);
+    background-color: #88ff00; }
+  .rainbow-color:nth-child(138) {
+    -webkit-transform: rotate(274deg) skewX(-85deg);
+    transform: rotate(274deg) skewX(-85deg);
+    background-color: #91ff00; }
+  .rainbow-color:nth-child(139) {
+    -webkit-transform: rotate(276deg) skewX(-85deg);
+    transform: rotate(276deg) skewX(-85deg);
+    background-color: #99ff00; }
+  .rainbow-color:nth-child(140) {
+    -webkit-transform: rotate(278deg) skewX(-85deg);
+    transform: rotate(278deg) skewX(-85deg);
+    background-color: #a1ff00; }
+  .rainbow-color:nth-child(141) {
+    -webkit-transform: rotate(280deg) skewX(-85deg);
+    transform: rotate(280deg) skewX(-85deg);
+    background-color: #aaff00; }
+  .rainbow-color:nth-child(142) {
+    -webkit-transform: rotate(282deg) skewX(-85deg);
+    transform: rotate(282deg) skewX(-85deg);
+    background-color: #b2ff00; }
+  .rainbow-color:nth-child(143) {
+    -webkit-transform: rotate(284deg) skewX(-85deg);
+    transform: rotate(284deg) skewX(-85deg);
+    background-color: #bbff00; }
+  .rainbow-color:nth-child(144) {
+    -webkit-transform: rotate(286deg) skewX(-85deg);
+    transform: rotate(286deg) skewX(-85deg);
+    background-color: #c3ff00; }
+  .rainbow-color:nth-child(145) {
+    -webkit-transform: rotate(288deg) skewX(-85deg);
+    transform: rotate(288deg) skewX(-85deg);
+    background-color: #ccff00; }
+  .rainbow-color:nth-child(146) {
+    -webkit-transform: rotate(290deg) skewX(-85deg);
+    transform: rotate(290deg) skewX(-85deg);
+    background-color: #d4ff00; }
+  .rainbow-color:nth-child(147) {
+    -webkit-transform: rotate(292deg) skewX(-85deg);
+    transform: rotate(292deg) skewX(-85deg);
+    background-color: #ddff00; }
+  .rainbow-color:nth-child(148) {
+    -webkit-transform: rotate(294deg) skewX(-85deg);
+    transform: rotate(294deg) skewX(-85deg);
+    background-color: #e6ff00; }
+  .rainbow-color:nth-child(149) {
+    -webkit-transform: rotate(296deg) skewX(-85deg);
+    transform: rotate(296deg) skewX(-85deg);
+    background-color: #eeff00; }
+  .rainbow-color:nth-child(150) {
+    -webkit-transform: rotate(298deg) skewX(-85deg);
+    transform: rotate(298deg) skewX(-85deg);
+    background-color: #f6ff00; }
+  .rainbow-color:nth-child(151) {
+    -webkit-transform: rotate(300deg) skewX(-85deg);
+    transform: rotate(300deg) skewX(-85deg);
+    background-color: yellow; }
+  .rainbow-color:nth-child(152) {
+    -webkit-transform: rotate(302deg) skewX(-85deg);
+    transform: rotate(302deg) skewX(-85deg);
+    background-color: #fff700; }
+  .rainbow-color:nth-child(153) {
+    -webkit-transform: rotate(304deg) skewX(-85deg);
+    transform: rotate(304deg) skewX(-85deg);
+    background-color: #ffee00; }
+  .rainbow-color:nth-child(154) {
+    -webkit-transform: rotate(306deg) skewX(-85deg);
+    transform: rotate(306deg) skewX(-85deg);
+    background-color: #ffe500; }
+  .rainbow-color:nth-child(155) {
+    -webkit-transform: rotate(308deg) skewX(-85deg);
+    transform: rotate(308deg) skewX(-85deg);
+    background-color: #ffdd00; }
+  .rainbow-color:nth-child(156) {
+    -webkit-transform: rotate(310deg) skewX(-85deg);
+    transform: rotate(310deg) skewX(-85deg);
+    background-color: #ffd500; }
+  .rainbow-color:nth-child(157) {
+    -webkit-transform: rotate(312deg) skewX(-85deg);
+    transform: rotate(312deg) skewX(-85deg);
+    background-color: #ffcc00; }
+  .rainbow-color:nth-child(158) {
+    -webkit-transform: rotate(314deg) skewX(-85deg);
+    transform: rotate(314deg) skewX(-85deg);
+    background-color: #ffc300; }
+  .rainbow-color:nth-child(159) {
+    -webkit-transform: rotate(316deg) skewX(-85deg);
+    transform: rotate(316deg) skewX(-85deg);
+    background-color: #ffbb00; }
+  .rainbow-color:nth-child(160) {
+    -webkit-transform: rotate(318deg) skewX(-85deg);
+    transform: rotate(318deg) skewX(-85deg);
+    background-color: #ffb300; }
+  .rainbow-color:nth-child(161) {
+    -webkit-transform: rotate(320deg) skewX(-85deg);
+    transform: rotate(320deg) skewX(-85deg);
+    background-color: #ffaa00; }
+  .rainbow-color:nth-child(162) {
+    -webkit-transform: rotate(322deg) skewX(-85deg);
+    transform: rotate(322deg) skewX(-85deg);
+    background-color: #ffa200; }
+  .rainbow-color:nth-child(163) {
+    -webkit-transform: rotate(324deg) skewX(-85deg);
+    transform: rotate(324deg) skewX(-85deg);
+    background-color: #ff9900; }
+  .rainbow-color:nth-child(164) {
+    -webkit-transform: rotate(326deg) skewX(-85deg);
+    transform: rotate(326deg) skewX(-85deg);
+    background-color: #ff9100; }
+  .rainbow-color:nth-child(165) {
+    -webkit-transform: rotate(328deg) skewX(-85deg);
+    transform: rotate(328deg) skewX(-85deg);
+    background-color: #ff8800; }
+  .rainbow-color:nth-child(166) {
+    -webkit-transform: rotate(330deg) skewX(-85deg);
+    transform: rotate(330deg) skewX(-85deg);
+    background-color: #ff8000; }
+  .rainbow-color:nth-child(167) {
+    -webkit-transform: rotate(332deg) skewX(-85deg);
+    transform: rotate(332deg) skewX(-85deg);
+    background-color: #ff7700; }
+  .rainbow-color:nth-child(168) {
+    -webkit-transform: rotate(334deg) skewX(-85deg);
+    transform: rotate(334deg) skewX(-85deg);
+    background-color: #ff6e00; }
+  .rainbow-color:nth-child(169) {
+    -webkit-transform: rotate(336deg) skewX(-85deg);
+    transform: rotate(336deg) skewX(-85deg);
+    background-color: #ff6600; }
+  .rainbow-color:nth-child(170) {
+    -webkit-transform: rotate(338deg) skewX(-85deg);
+    transform: rotate(338deg) skewX(-85deg);
+    background-color: #ff5e00; }
+  .rainbow-color:nth-child(171) {
+    -webkit-transform: rotate(340deg) skewX(-85deg);
+    transform: rotate(340deg) skewX(-85deg);
+    background-color: #ff5500; }
+  .rainbow-color:nth-child(172) {
+    -webkit-transform: rotate(342deg) skewX(-85deg);
+    transform: rotate(342deg) skewX(-85deg);
+    background-color: #ff4d00; }
+  .rainbow-color:nth-child(173) {
+    -webkit-transform: rotate(344deg) skewX(-85deg);
+    transform: rotate(344deg) skewX(-85deg);
+    background-color: #ff4400; }
+  .rainbow-color:nth-child(174) {
+    -webkit-transform: rotate(346deg) skewX(-85deg);
+    transform: rotate(346deg) skewX(-85deg);
+    background-color: #ff3c00; }
+  .rainbow-color:nth-child(175) {
+    -webkit-transform: rotate(348deg) skewX(-85deg);
+    transform: rotate(348deg) skewX(-85deg);
+    background-color: #ff3300; }
+  .rainbow-color:nth-child(176) {
+    -webkit-transform: rotate(350deg) skewX(-85deg);
+    transform: rotate(350deg) skewX(-85deg);
+    background-color: #ff2b00; }
+  .rainbow-color:nth-child(177) {
+    -webkit-transform: rotate(352deg) skewX(-85deg);
+    transform: rotate(352deg) skewX(-85deg);
+    background-color: #ff2200; }
+  .rainbow-color:nth-child(178) {
+    -webkit-transform: rotate(354deg) skewX(-85deg);
+    transform: rotate(354deg) skewX(-85deg);
+    background-color: #ff1a00; }
+  .rainbow-color:nth-child(179) {
+    -webkit-transform: rotate(356deg) skewX(-85deg);
+    transform: rotate(356deg) skewX(-85deg);
+    background-color: #ff1100; }
+  .rainbow-color:nth-child(180) {
+    -webkit-transform: rotate(358deg) skewX(-85deg);
+    transform: rotate(358deg) skewX(-85deg);
+    background-color: #ff0900; }
 
-.dark-wrapper {
+.rainbow-dark-wrapper {
   -webkit-animation: rotating 1s linear infinite;
-  animation: rotating 1s linear infinite;
-}
+  animation: rotating 1s linear infinite; }
 
-.dark {
+.rainbow-dark {
   width: 182px;
   height: 247px;
   top: -4px;
@@ -946,61 +759,44 @@ html div, body div {
   -webkit-transform-origin: right;
   transform-origin: right;
   border-radius: 50%;
-  box-shadow: 26px -85px 0 0 rgba(0, 0, 0, 0.3);
-}
-.dark:nth-child(1) {
-  -webkit-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
-.dark:nth-child(2) {
-  -webkit-transform: rotate(72deg);
-  transform: rotate(72deg);
-}
-.dark:nth-child(3) {
-  -webkit-transform: rotate(144deg);
-  transform: rotate(144deg);
-}
-.dark:nth-child(4) {
-  -webkit-transform: rotate(216deg);
-  transform: rotate(216deg);
-}
-.dark:nth-child(5) {
-  -webkit-transform: rotate(288deg);
-  transform: rotate(288deg);
-}
+  box-shadow: 26px -85px 0 0 rgba(0, 0, 0, 0.3); }
+  .rainbow-dark:nth-child(1) {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  .rainbow-dark:nth-child(2) {
+    -webkit-transform: rotate(72deg);
+    transform: rotate(72deg); }
+  .rainbow-dark:nth-child(3) {
+    -webkit-transform: rotate(144deg);
+    transform: rotate(144deg); }
+  .rainbow-dark:nth-child(4) {
+    -webkit-transform: rotate(216deg);
+    transform: rotate(216deg); }
+  .rainbow-dark:nth-child(5) {
+    -webkit-transform: rotate(288deg);
+    transform: rotate(288deg); }
 
-.high-light {
+.rainbow-high-light {
   top: 108px;
   left: 127px;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
   border-radius: 200px / 150px;
   width: 186px;
-  height: 136px;
-}
+  height: 136px; }
 
 @-webkit-keyframes rotating {
   from {
-    -webkit-transform: rotate(0deg);
-  }
+    -webkit-transform: rotate(0deg); }
 
   to {
-    -webkit-transform: rotate(360deg);
-  }
-}
-
+    -webkit-transform: rotate(360deg); } }
 @keyframes rotating {
   from {
-    transform: rotate(0deg);
-  }
+    transform: rotate(0deg); }
 
   to {
-    transform: rotate(360deg);
-  }
-}
-
+    transform: rotate(360deg); } }
 .name {
-  font-family: Arial;
-}
-.name a {
-  color: gray;
-}
+  font-family: Arial; }
+  .name a {
+    color: gray; }
